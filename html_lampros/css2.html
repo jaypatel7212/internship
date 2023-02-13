@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {margin: 0px;}
+
+        ul.nav {
+            list-style-type: decimal;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: coral;
+        }
+
+        ul.nav li {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+
+        }
+
+        ul.nav li a:hover:not(.active) {
+            background-color:yellow ;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right, 
+            ul.topnav li {float: none;}
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <ul class="topnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#News"></a></li>
+        <li><a href="#Contact"></a></li>
+    </ul>
+    
+</body>
+</html>
