@@ -26,7 +26,8 @@
     walk(){
         alert("animal walk");
     }
-  };
+  }; 
+  
   let rabbit = {
     jumps:true
     __proto__:animal
