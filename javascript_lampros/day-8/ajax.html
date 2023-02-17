@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Here we load to data</p>
+    <button onclick="loadData()">click</button>
+
+    <script>
+        function loadData(){
+            
+            var Xhttp = new XMLHttpRequest();
+
+            Xhttp.onreadystatechange = function(){
+
+                if(this.readyState==4 && this.status==200)
+                {
+                    //console.log(this.responseText);
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+                else if(this.readyState==4 && this.status==404) {
+                    document.getElementById("demo").innerHTML = "File not found";
+                }
+            };
+
+
+            Xhttp.open('GET',"https://jsonplaceholder.typicode.com/posts",true);
+            Xhttp.send();
+        }
+    </script>
+</body>
+</html>

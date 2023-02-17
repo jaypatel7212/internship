@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function theGame(word) {
+  let words = [];
+  if(word.length == 0 || word[0] === "") return words;
+  words.push(word[0]);
+  for(let i = 1; i < word.length; i++) {
+    let prev = word[i-1], curr = word[i];
+    if(curr === "") break;
+    if(curr.charAt(0) === prev.charAt(prev.length-1)) {
+      words.push(curr);
+    }
+    else {
+      break;
+    }
+  } 
+  return words;
+}
+
+    </script>
+</body>
+</html>
