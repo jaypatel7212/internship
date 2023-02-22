@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly task</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="table-responsive">
+
+            <table id="myTable" class="table styled-table">
+     
+        
+            <thead>
+                <tr>
+                    <th hidden>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>image</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                
+           </tbody>
+        </table>
+
+        </div>
+        </div>
+    
+
+
+    <div id="updatePop" class="updatePop">
+        <form id="formData">
+            <input id="id" type="text" name="id" hidden>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" ><br><br>
+            <input type="button" value="Update" id="submitbtn">
+        </form> 
+    
+   
+    <script src="./script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+ h1 {
+    text-align: center;
+}
+
+section {
+    position: relative;
+     max-width: auto; 
+ }
+
+table{
+    margin-top:10% ;
+    margin-left: auto;
+     margin-right: auto;
+     /* width: 500px; */
+      width: auto;
+     text-align: center;
+     padding: 10px;
+}
+
+th {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+tbody {
+    background-color: rgb(236, 211, 203);
+} 
